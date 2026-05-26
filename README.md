@@ -45,3 +45,22 @@ esta es una porueba con la logica incompleta por tal motivo la prueba va a falla
 ```
 
 ![test_fallando](image-1.png)
+
+## green
+
+se vuelve a hacer la implementacion minima para que la prueba pase
+
+para esto, se realizaron 2 cambios en el codigo los cuales son los siguientes
+
+``` java
+public enum E_REGISTERRE {VALID, DUPLICATE, INVALID, DEAD}
+```
+
+``` java
+    public E_REGISTERRE C_REGISTERRESULT(C_PERSON PERSON) {
+        if (!PERSON.IS_ALIVE()) {return E_REGISTERRE.DEAD;}
+        return E_REGISTERRE.VALID;
+    }
+```
+
+![test_green2](image-2.png)
