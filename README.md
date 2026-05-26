@@ -5,7 +5,7 @@
 
 ```
 
-## Test
+## TDD
 
 ### GREEN
 
@@ -64,3 +64,7 @@ public enum E_REGISTERRE {VALID, DUPLICATE, INVALID, DEAD}
 ```
 
 ![test_green2](image-2.png)
+
+## refactor
+
+se realiza un refactor para poder completar el codigo de la manera esperada

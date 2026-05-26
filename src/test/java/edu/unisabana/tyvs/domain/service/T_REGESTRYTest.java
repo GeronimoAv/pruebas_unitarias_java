@@ -11,13 +11,14 @@ public class T_REGESTRYTest {
 
     @Test
     public void SHOULREGISTERPERSON() {
-
+        // Arrange: preparar los datos y el objeto a probar
         C_REGISTRY REGISTRY = new C_REGISTRY();
-        
         C_PERSON PERSON = new C_PERSON("Ana", 1, 30, E_GENDER.FEMALE, true);
         
+        // Act: ejecutar la acción que queremos probar
         E_REGISTERRE RESULT = REGISTRY.C_REGISTERRESULT(PERSON);
 
+        // Assert: verificar el resultado esperado
         Assert.assertEquals(E_REGISTERRE.VALID, RESULT);
     }
     
