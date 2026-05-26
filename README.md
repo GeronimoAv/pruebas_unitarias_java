@@ -1,15 +1,17 @@
-package edu.unisabana.tyvs.domain.service;
+# testing
+## estructura del proyecto
 
-import edu.unisabana.tyvs.domain.model.*;
-import org.junit.Test;
+``` bash
 
-import java.rmi.registry.Registry;
+```
 
-import org.junit.Assert;
+## Test
 
-public class T_REGESTRYTest {
+### GREEN
 
-    @Test
+Esta es la implementacion minima para que la prueba pueda pasar sin problemas
+
+``` java
     public void SHOULREGISTERPERSON() {
 
         C_REGISTRY REGISTRY = new C_REGISTRY();
@@ -20,9 +22,15 @@ public class T_REGESTRYTest {
 
         Assert.assertEquals(E_REGISTERRE.VALID, RESULT);
     }
-    
+```
 
-    @Test
+![test_minimo](image.png)
+
+### RED
+
+esta es una porueba con la logica incompleta por tal motivo la prueba va a fallar
+
+``` java
     public void shouldRejectDeadPerson() {
         // Arrange: preparar los datos y el objeto a probar
         C_REGISTRY REGISTRY = new C_REGISTRY();
@@ -34,6 +42,6 @@ public class T_REGESTRYTest {
         // Assert: verificar el resultado esperado
         Assert.assertEquals(E_REGISTERRE.DEAD, RESULT);
     }
+```
 
-}
- 
+![test_fallando](image-1.png)
