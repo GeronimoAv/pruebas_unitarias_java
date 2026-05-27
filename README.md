@@ -1,5 +1,5 @@
 # testing
-
+(TODA LA DOCUMENTACION SE ENCUENTRA EN LA WIKI DEL REPOSITORIO)
 ## INTEGRANTES
 
 Sadane Geronimo Miguel Santiago Acevedo Virgues
