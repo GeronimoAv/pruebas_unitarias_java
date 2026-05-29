@@ -1,5 +1,7 @@
 # testing
+
 (TODA LA DOCUMENTACION SE ENCUENTRA EN LA WIKI DEL REPOSITORIO)
+
 ## INTEGRANTES
 
 Sadane Geronimo Miguel Santiago Acevedo Virgues
@@ -10,8 +12,6 @@ Sadane Geronimo Miguel Santiago Acevedo Virgues
 README.md
 pom.xml
 .gitignore
-jacoco/
-└─ index.html
 src/
 ├─ main/java/edu/unisabana/tyvs/
 │ ├─ domain/
@@ -33,20 +33,20 @@ src/
 
 las siguientes pruebas se realizaron con Java y maven, se utilizan los siguientes comandos para compilar y correr los test
 
-**Compilar**
+**Compilar:**
 
 ``` cli
 mvn clean compile
 ```
 
-**correr test unitarios**
+**correr test unitarios:**
 
 ``` cli
 mvn clean test
 ```
 
-**cobertura del codigo**
+**cobertura del codigo:**
 
-```
+``` cli
 mvn jacoco:report
 ```
